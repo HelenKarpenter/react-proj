@@ -1,6 +1,6 @@
 export default function Contact () {
     return(
-        <>
+        <div className="contact-wrap">
         <div className="map">
       <section className="contacts">
         
@@ -48,6 +48,6 @@ export default function Contact () {
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
       </section>
-    </div></>
+    </div></div>
     )
 }

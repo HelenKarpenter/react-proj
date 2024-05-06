@@ -1,16 +1,19 @@
+*{
+    margin: 0;
+}
+
 body {
     height: 100vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
-    background-color: black;
+    background-color: #0f0f0f;
     margin: 0rem;
  /*   overflow: hidden;*/
     overflow-y: hidden;
   }
 
-
-
+  /* HEADER */
   header{
     display: flex;
     width: 100vw;
@@ -80,13 +83,13 @@ body {
      padding: 10px;
  }
 
-
  /* TRACK */
 .image{
     width: 40vmin;
     height: 56vmin;
     object-fit: cover;
     object-position: center;
+    object-position: 10% center;
 }
 
 #image-track {
@@ -104,7 +107,6 @@ body {
     font-size: 28px;
     color: black;
     background-color: rgba(250, 235, 215,0.7);
-    
 }
 
 #image-track:hover {
@@ -112,7 +114,7 @@ body {
     object-position: 100%;
     transition: 5s linear;
     animation-iteration-count: infinite;
-}
+    }
 }
 
 img:hover{
@@ -126,7 +128,6 @@ img:hover{
     display: flex;
     justify-content: center;
     margin-top: 2%;
-
 }
 
 .box-about{
@@ -144,8 +145,6 @@ img:hover{
     font-size: 32px;
 }
 
-
-
 .box-about button{
     width: 80%;
     margin: auto;
@@ -157,11 +156,6 @@ img:hover{
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    /* background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    background-image: linear-gradient(45deg, red, orange, yellow, brown);
-    animation: animate 15s ease infinite; */
 }
 
 .box-about button:hover{
@@ -172,20 +166,22 @@ img:hover{
 .wrapper-about{
     display: flexbox;
     flex-direction: column;
-    margin-top: 10vw;
+    height: 100vh;
+    padding-top: 20vh;
     background-image: url('./images/office7.jpg');
-    background-size: cover;
-    background-position: center;
+    background-size: cover; 
 }
 
 .text-about{
     text-align: center;
     color: #f4c981;
+    font-family: 'Red Hat Display', sans-serif;
 }
 
 .text-about h1{
     font-weight: 400;
     text-shadow: 0px 2px 5px black;
+    font-family: 'Red Hat Display';
 }
 
 .text-about p{
@@ -194,6 +190,15 @@ img:hover{
 
 
 /* CONTACT */
+.contact-wrap{
+    display: flexbox;
+    flex-direction: column;
+    height: 100vh;
+    padding-top: 1vh;
+    background-image: url('./images/main-office.jpg');
+    background-size: cover;
+}
+
 input{
     width: 300px;
     border-radius: 5%;
@@ -209,8 +214,9 @@ textarea{
 }
 
 .map{
-    margin-top: 15%;
-    margin-left: 15%;
+    margin-top: 12%;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     justify-content: space-around;
     border: 1px solid white;
@@ -226,7 +232,9 @@ form{
 }
 
 iframe{
-    padding-top: 10%;
+    
+    width: 40vw;
+    height: 64vh;
 }
 
 .address{
@@ -244,9 +252,6 @@ footer{
 }
 
 /* PAGES */
-
-
-
 .gallery{
     margin-top: 12%;
     margin-left: 5%;
@@ -254,8 +259,7 @@ footer{
     display: grid;
     grid-template-columns: 20% 20% 12% 12% 25%;
     grid-template-rows: repeat(3, 200px);
-    grid-gap: 25px;
-    
+    grid-gap: 25px;  
 }
 
 .gallery img{
@@ -271,8 +275,7 @@ footer{
 .gallery img:hover{
     transform: scale(1.4);
     transition: 0.2s linear;
-    z-index: 1;
-    
+    z-index: 1; 
 }
 
 .grid-item1 {
@@ -290,13 +293,11 @@ footer{
         transform: translateX(-100%);
         opacity: 1;
     }
-
     100%{
         transform: translateX(0);
         opacity: 1;
     }
 }
-
 
 .grid-item2{
     background-color: transparent;
@@ -312,7 +313,6 @@ footer{
         transform: translateY(100%);
         opacity: 1;
     }
-
     100%{
         transform: translateY(0);
         opacity: 1;
@@ -335,7 +335,6 @@ footer{
         transform: scale(3);
         opacity: 1;
     }
-
     100%{
         transform: scale(1);
         opacity: 1;
@@ -357,7 +356,6 @@ footer{
         transform: translateY(100%);
         opacity: 1;
     }
-
     100%{
         transform: translateY(0);
         opacity: 1;
@@ -379,7 +377,6 @@ footer{
         transform: translateY(-100%);
         opacity: 1;
     }
-
     100%{
         transform: translateY(0);
         opacity: 1;
@@ -401,7 +398,6 @@ footer{
         transform: translateY(-100%);
         opacity: 1;
     }
-
     100%{
         transform: translateY(0);
         opacity: 1;
@@ -423,7 +419,6 @@ footer{
         transform: translateX(100%);
         opacity: 1;
     }
-
     100%{
         transform: translateX(0);
         opacity: 1;
@@ -445,17 +440,13 @@ footer{
         transform: translateX(100%);
         opacity: 1;
     }
-
     100%{
         transform: translateX(0);
         opacity: 1;
     }
 }
 
-
-
 /* mobile screen */
-
 
 @media screen and (min-width: 0) and (max-width: 409px){
     .gallery{
@@ -465,12 +456,10 @@ footer{
         display: flex;
         flex-direction: column;
     }
-
     img{
         width: 100%;
         height: 250px;
     }
-    
 }
 
 @media screen and (min-width: 410px) and (max-width: 595px) {
@@ -490,7 +479,6 @@ footer{
         grid-row-start: 1;
         grid-row-end: 2;
     }
-    
     .grid-item2{
         background-color: transparent;
         grid-column-start: 1;
@@ -498,7 +486,6 @@ footer{
         grid-row-start: 2;
         grid-row-end: 4;
     }
-    
     .grid-item3{
         background-color: transparent;
         grid-column-start: 2;
@@ -506,7 +493,6 @@ footer{
         grid-row-start: 2;
         grid-row-end: 3;
     }
-    
     .grid-item4{
         background-color: transparent;
         grid-column-start: 2;
@@ -514,7 +500,6 @@ footer{
         grid-row-start: 3;
         grid-row-end: 4;
     }
-    
     .grid-item5{
         background-color: transparent;
         grid-column-start: 1;
@@ -522,7 +507,6 @@ footer{
         grid-row-start: 4;
         grid-row-end: 5;
     }
-    
     .grid-item6{
         background-color: transparent;
         grid-column-start: 1;
@@ -530,7 +514,6 @@ footer{
         grid-row-start: 5;
         grid-row-end: 6;
     }
-    
     .grid-item7{
         background-color: transparent;
         grid-column-start: 1;
@@ -538,7 +521,6 @@ footer{
         grid-row-start: 6;
         grid-row-end: 7;
     }
-    
     .grid-item8{
         background-color: transparent;
         grid-column-start: 2;
@@ -567,7 +549,6 @@ footer{
         grid-row-start: 1;
         grid-row-end: 2;
     }
-    
     .grid-item2{
         background-color: transparent;
         grid-column-start: 1;
@@ -575,7 +556,6 @@ footer{
         grid-row-start: 2;
         grid-row-end: 4;
     }
-    
     .grid-item3{
         background-color: transparent;
         grid-column-start: 2;
@@ -583,7 +563,6 @@ footer{
         grid-row-start: 2;
         grid-row-end: 3;
     }
-    
     .grid-item4{
         background-color: transparent;
         grid-column-start: 2;
@@ -591,7 +570,6 @@ footer{
         grid-row-start: 3;
         grid-row-end: 4;
     }
-    
     .grid-item5{
         background-color: transparent;
         grid-column-start: 3;
@@ -599,7 +577,6 @@ footer{
         grid-row-start: 1;
         grid-row-end: 3;
     }
-    
     .grid-item6{
         background-color: transparent;
         grid-column-start: 1;
@@ -607,7 +584,6 @@ footer{
         grid-row-start: 4;
         grid-row-end: 5;
     }
-    
     .grid-item7{
         background-color: transparent;
         grid-column-start: 2;
@@ -615,7 +591,6 @@ footer{
         grid-row-start: 4;
         grid-row-end: 5;
     }
-    
     .grid-item8{
         background-color: transparent;
         grid-column-start: 3;
