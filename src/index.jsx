@@ -10,6 +10,7 @@ import Bedroom from "./components/bedroom";
 import Kitchen from "./components/kitchen";
 import Kids from "./components/kids";
 import Footer from "./components/footer";
+import Success from "./components/success";
 
 
 export default function App() {
@@ -29,6 +30,7 @@ export default function App() {
       <Route path="/bedroom" element={<Bedroom />} />
       <Route path="/kitchen" element={<Kitchen />} />
       <Route path="/kids" element={<Kids />} />
+      <Route path="/success" element={<Success />} />
     </Routes>
   
     <Footer />

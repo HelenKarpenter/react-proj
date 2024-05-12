@@ -280,6 +280,8 @@ textarea{
     width: 100px;
     height: 30px;
     background-color: red;
+    font-size: 18px;
+    cursor: pointer;
 }
 
 .map{
@@ -762,3 +764,31 @@ footer{
         margin-top: 22vh;
     }
 }
+
+ /* SuCCESS */
+
+ .success{
+    display: flexbox;
+    flex-direction: column;
+    height: 100vh;
+    padding-top: 1vh;
+    background-image: url('./images/main-office.jpg');
+    background-size: cover; 
+ }
+
+ .success-message{
+    margin: 35vh auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 50%;
+    height: 200px;
+    background-color: rgba(255,255,255,0.7);
+ }
+
+ .success-message p{
+    font-size: 20px;
+ }
