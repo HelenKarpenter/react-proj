@@ -55,9 +55,14 @@ body {
     color: black;
 
 }
- 
+
+#container{
+    display: flex;
+}
 
  /* MAIN */
+
+
  .text-main{
      width: 35vw;
      height: 29vw;
@@ -120,6 +125,31 @@ body {
 img:hover{
     transform: scale(1.2);
     transition: 0.2s linear;
+}
+
+@media screen and (min-width: 0) and (max-width: 1302px){
+    #image-track {
+        display: flex;
+        gap: 4vmin;
+        position: absolute;
+        left: 0%;
+        top: 90vh;
+        transform: translate(0%, -50%);
+        
+    }
+    .text-main{
+        width: 65vw;
+        height: 29vw;
+        margin: 22vh auto;
+    }
+    h1{
+        font-size: 36px;
+    }
+    .text-main p{
+        font-size: 16px;
+        line-height: 30px;
+        margin-top: 1vh;
+    }
 }
 
 
@@ -188,6 +218,44 @@ img:hover{
     color: #fdb05a;
 }
 
+@media screen and (min-width: 0) and (max-width: 409px){
+    .wrap-about{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+    .box-about{
+        margin: 5px auto; 
+        height: 40vh;
+    }
+}
+
+@media screen and (min-width: 410px) and (max-width: 595px) {
+    .wrap-about{  
+        display: flex;
+        flex-direction: column;
+        margin: auto; 
+    }
+    .box-about{
+        margin: 5px auto; 
+        height: 40vh;
+    }
+}
+
+@media screen and (min-width: 596px) and (max-width: 996px) {
+    .wrap-about{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+    .box-about{
+        margin: 5px auto;
+        height: 30vh;
+        width: 500px;
+    }
+}
+
+
 
 /* CONTACT */
 .contact-wrap{
@@ -211,6 +279,7 @@ textarea{
 #submit{
     width: 100px;
     height: 30px;
+    background-color: red;
 }
 
 .map{
@@ -229,6 +298,8 @@ textarea{
 
 form{
     padding-top: 20%;
+    font-size: 20px;
+    color: #03231e;
 }
 
 iframe{
@@ -238,7 +309,94 @@ iframe{
 }
 
 .address{
+    margin-top: 10%;
     color: darkslategray;
+}
+
+@media screen and (min-width: 0) and (max-width: 595px){
+    .map{
+        margin-top: 25vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    iframe{
+        width: 64vw;
+        height: 20vh;
+    }
+    textarea{
+        width: 200px;
+        height: 100px;
+        border-radius: 5%;
+    }
+    form{
+        padding-top: 1%;
+    }
+    input{
+        width: 200px;
+    }
+}
+
+@media screen and (min-width: 596px) and (max-width: 720px){
+    .map{
+        margin-top: 23vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    iframe{
+
+        width: 64vw;
+        height: 20vh;
+    }
+    textarea{
+        width: 300px;
+        height: 100px;
+        border-radius: 5%;
+    }
+    form{
+        padding-top: 1%;
+    }
+}
+
+@media screen and (min-width: 721px) and (max-width: 996px) {
+    .map{
+        margin-top: 23vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    iframe{
+
+        width: 64vw;
+        height: 20vh;
+    }
+    textarea{
+        width: 300px;
+        height: 100px;
+        border-radius: 5%;
+    }
+    form{
+        padding-top: 1%;
+    }
+}
+@media screen and (min-width: 997px) and (max-width: 1700px) {
+    .map{
+        margin-top: 23vh;
+        display: flex;
+    }
+    iframe{
+        width: 30vw;
+        height: 55vh;
+    }
+    textarea{
+        width: 300px;
+        height: 100px;
+        border-radius: 5%;
+    }
+    form{
+        padding-top: 10%;
+    }
 }
 
 
@@ -450,7 +608,7 @@ footer{
 
 @media screen and (min-width: 0) and (max-width: 409px){
     .gallery{
-        margin-top: 2%;
+        margin-top: 22vh;
         margin-left: 5%;
         margin-right: 5%;
         display: flex;
@@ -464,7 +622,7 @@ footer{
 
 @media screen and (min-width: 410px) and (max-width: 595px) {
     .gallery{
-        margin-top: 2%;
+        margin-top: 22vh;
         margin-left: 5%;
         margin-right: 5%;
         display: grid;
@@ -534,7 +692,7 @@ footer{
 
 @media screen and (min-width: 596px) and (max-width: 996px) {
     .gallery{
-        margin-top: 2%;
+        margin-top: 22vh;
         margin-left: 5%;
         margin-right: 5%;
         display: grid;
@@ -597,5 +755,10 @@ footer{
         grid-column-end: 4;
         grid-row-start: 4;
         grid-row-end: 5;
+    }
+}
+@media screen and (min-width: 997px) and (max-width: 1601px){
+    .gallery{
+        margin-top: 22vh;
     }
 }

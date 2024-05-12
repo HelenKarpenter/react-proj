@@ -9,8 +9,6 @@ import { Link } from "react-router-dom";
 
 export default function NavTrack () {
   
-
-
         return (
             <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
               <Link to={"./office"}><img
