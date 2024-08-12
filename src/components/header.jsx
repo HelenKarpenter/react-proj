@@ -17,7 +17,7 @@ export default function Header() {
       </div>
       <div className="navbar">
         <Link to={"./about"}><button>About Us</button></Link>
-        <Link to={"./contact"}><button>Contacts</button></Link>
+        <Link to={"./contact"}><button>Contact Us</button></Link>
       </div>
     </header>
   );

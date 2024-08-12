@@ -30,7 +30,8 @@ export default function Contact () {
                 placeholder="Please enter your phone number"
                 minlength="11"
                 required 
-                /><br />
+                />
+              <br />
               <label>E-mail</label><br />
               <input
                 type="text"
