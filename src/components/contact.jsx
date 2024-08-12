@@ -1,10 +1,20 @@
+import { useNavigate } from "react-router-dom";
+
 export default function Contact () {
+  const navigate = useNavigate();
+
+  const handleSubmit = (event) =>{
+    event.preventDefault();
+
+  navigate('/success');
+}
+
     return(
         <div className="contact-wrap">
         <div className="map">
       <section className="contacts">
         
-            <form method="post">
+            <form method="post" onSubmit={handleSubmit}>
               
               <label for="">Name</label><br />
               <input
@@ -15,7 +25,12 @@ export default function Contact () {
               />
               <br />
               <label for="">Phone number</label><br />
-              <input type="text" placeholder="Please enter your phone number" /><br />
+              <input 
+                type="text" 
+                placeholder="Please enter your phone number"
+                minlength="11"
+                required 
+                /><br />
               <label>E-mail</label><br />
               <input
                 type="text"
